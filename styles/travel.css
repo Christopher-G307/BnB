@@ -1,0 +1,118 @@
+.navbar-white {
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-white .nav-links a {
+  color: black;
+}
+
+.navbar-white .register-btn {
+  background-color: rgba(250, 81, 104);
+  color: white;
+}
+
+nav.navbar-white .fa-bars-staggered {
+  color: black;
+}
+
+.navbar-white .active::after {
+  background-color: rgba(250, 81, 104);
+}
+
+.navbar-white .register-btn:hover {
+  background-color: rgb(223, 20, 47);
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+
+h1 {
+  padding: 40px;
+}
+
+.img-container {
+  width: 98vw;
+  margin: 0 auto;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 15px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.filter-tag {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.filter-tag a {
+  outline: none;
+  border: none;
+  padding: 20px 60px;
+  margin: 30px 0;
+  box-shadow: 9px 9px 30px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.filter-tag a:hover {
+  background-color: rgb(15, 14, 14);
+  color: rgb(219, 55, 132);
+}
+
+.activities {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 30px;
+  flex-wrap: wrap;
+}
+
+.activities div {
+  width: 300px;
+  padding: 20px;
+}
+
+.activities div img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 400px;
+}
+
+.activities p span {
+  color: rgba(0, 0, 0, 0.373);
+}
+
+.activities .heading i {
+  color: gold;
+}
+
+.description {
+  color: #838181;
+}
+
+.show-all {
+  padding: 10px 20px;
+  margin-left: 60px;
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.show-all i {
+  padding-left: 10px;
+}
+
+.show-all:hover {
+  background-color: black;
+  color: rgb(219, 55, 132);
+  transition: 1s ease-in-out;
+}

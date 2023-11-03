@@ -1,0 +1,282 @@
+.navbar-white {
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-white .nav-links a {
+  color: black;
+}
+
+.navbar-white .register-btn {
+  background-color: rgba(250, 81, 104);
+  color: white;
+}
+
+nav.navbar-white .fa-bars-staggered {
+  color: black;
+}
+
+.navbar-white .active::after {
+  background-color: rgba(250, 81, 104);
+}
+
+.navbar-white .register-btn:hover {
+  background-color: rgb(223, 20, 47);
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+
+.house-details {
+  padding: 0 12%;
+}
+
+.house-title {
+  margin-top: 50px;
+}
+
+.house-title h1 {
+  font-weight: 600;
+}
+
+.house-title .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.house-title span {
+  margin: 0 20px;
+}
+
+.house-title i {
+  color: rgba(250, 81, 104);
+  font-size: 15px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.gallery-img-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.small-details h2 {
+  font-weight: 500;
+}
+
+.small-details h4 {
+  text-align: right;
+  font-size: 22px;
+}
+
+.line {
+  border: 0;
+  height: 1px;
+  background-color: rgb(216, 209, 209);
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0 50px;
+}
+
+.check-form {
+  margin: 30px 0;
+  background-color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+}
+
+.check-form label {
+  display: block;
+}
+
+.check-form div {
+  padding: 20px;
+}
+
+.check-form input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.check-form button {
+  background-color: rgba(250, 81, 104);
+  border: 0;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  width: 350px;
+  border-radius: 8px;
+  padding: 18px;
+  cursor: pointer;
+}
+
+.check-form button:hover {
+  background-color: rgb(239, 13, 43);
+  transition: 1s ease-in-out;
+}
+
+.guest-field {
+  flex: 1;
+}
+
+.details-list {
+  list-style: none;
+  margin: 50px 0;
+}
+
+.details-list li {
+  font-size: 20px;
+  margin-left: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgb(85, 85, 85);
+  position: relative;
+}
+
+.details-list li span {
+  display: block;
+  font-family: 400;
+  font-size: 16px;
+}
+
+.details-list li i {
+  position: absolute;
+  top: 5px;
+  left: -40px;
+}
+
+.home-desc {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.map {
+  margin: 50px 0;
+}
+
+.map iframe {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.map h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.map b {
+  margin-bottom: 16px;
+  display: block;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+}
+
+.host img {
+  border-radius: 50%;
+  width: 80px;
+  margin-right: 30px;
+}
+
+.host h2 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.host i {
+  color: rgba(250, 81, 104);
+}
+
+.host-contact {
+  margin: 40px 0 40px 120px;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(85, 85, 85);
+  border-radius: 8px;
+  border: 1px solid rgba(250, 81, 104);
+  padding: 15px 50px;
+}
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .house-details {
+    margin-top: 150px;
+  }
+
+  .row {
+    margin-top: 10px;
+  }
+
+  .small-details h2 {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+
+  .small-details h4 {
+    margin: 10px 0;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .check-form {
+    padding: 10px 30px;
+  }
+
+  .check-form div {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .check-form input {
+    width: 100%;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding-bottom: 5px;
+  }
+
+  .check-form button {
+    margin-top: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .host {
+    display: block;
+    line-height: 28px;
+  }
+
+  .host-contact {
+    margin: 40px 0;
+  }
+
+  .check-form {
+    display: flex;
+    flex-direction: column;
+  }
+}

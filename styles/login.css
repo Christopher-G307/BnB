@@ -1,0 +1,153 @@
+.navbar-white {
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-white .nav-links a {
+  color: black;
+}
+
+.navbar-white .register-btn {
+  background-color: rgba(250, 81, 104);
+  color: white;
+}
+
+nav.navbar-white .fa-bars-staggered {
+  color: black;
+}
+
+.navbar-white .active::after {
+  background-color: rgba(250, 81, 104);
+}
+
+.navbar-white .register-btn:hover {
+  background-color: rgb(223, 20, 47);
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.54);
+  background-image: url("../images/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color;
+}
+
+.login-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+.wrapper {
+  width: 520px;
+  background-color: rgba(0, 0, 0, 0.385);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: 0.3px solid rgba(255, 255, 255, 0.273);
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.input-box {
+  border-radius: 40px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.forgot a {
+  color: white;
+}
+
+.btn {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.742);
+  color: white;
+}
+
+.register-link {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.register-link a {
+  color: white;
+  float: right;
+}
+
+.footer a,
+.footer p {
+  color: white;
+}
+
+@media (max-width: 530px) {
+  .forgot {
+    flex-direction: column;
+  }
+
+  .forgot a {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .register-link a {
+    display: block;
+    float: none;
+  }
+}

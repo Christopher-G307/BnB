@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(244, 97, 117, 0.816);
+  border-radius: 5px;
+}
+
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../images/banner.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+}
+
+.logo {
+  width: 140px;
+  cursor: pointer;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(244, 97, 117);
+}
+
+.register-btn {
+  background-color: white;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.register-btn:hover {
+  background-color: rgb(221, 27, 53);
+  color: white;
+}
+
+.container {
+  padding: 0 7%;
+}
+
+.header h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding-top: 22%;
+}
+
+.search-bar {
+  background-color: white;
+  width: 70%;
+  margin: 30px auto;
+  padding: 6px 10px 6px 30px;
+  border-radius: 50px;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-bar form input {
+  display: block;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+.search-bar form label {
+  font-weight: 600;
+}
+
+.search-bar form button {
+  background-color: rgb(250, 81, 104);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.search-bar form button img {
+  width: 15px;
+  margin-top: 7px;
+}
+
+.location-input {
+  flex: 1;
+}
+
+.sub-title {
+  margin: 50px 0 20px;
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: #333;
+  padding-left: 20px;
+}
+
+.exclusives {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+.exclusives div img {
+  width: 100%;
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.exclusives div {
+  position: relative;
+}
+
+.exclusives div a {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 26px;
+  text-decoration: none;
+  color: white;
+}
+
+.container div span {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.trending div img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.trending h3 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.cta {
+  margin: 80px 10px;
+  background: url(../images/banner-2.png),
+    linear-gradient(to right, #3f2321, transparent);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.cta h3 {
+  font-size: 4vw;
+  line-height: 5.3vw;
+  font-weight: 500;
+}
+
+.cta p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.cta-btn {
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  margin-top: 20px;
+  background-color: rgba(250, 81, 104);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  background-color: rgb(221, 27, 53);
+  transition: 1s ease-in-out;
+  transform: scale(1.1);
+}
+
+.start-btn {
+  text-decoration: none;
+  background-color: rgba(250, 81, 104);
+  color: white;
+  width: 80%;
+  max-width: 350px;
+  display: block;
+  text-align: center;
+  margin: 60px auto;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.start-btn:hover {
+  background-color: rgb(221, 27, 53);
+  transition: 1s ease-in-out;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 3.125rem;
+}
+
+.swiper-slide {
+  width: 350px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  border-radius: 10px;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("../images/story-1.png") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("../images/story-2.png") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("../images/story-3.png") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("../images/story-4.jpg") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("../images/story-6.jpg") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide div p {
+  color: white;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 18px;
+  display: -webkit-line-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.about-msg {
+  margin: 80px 0;
+  text-align: center;
+  color: #333;
+  font-size: 17px;
+}
+
+.about-msg h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  text-decoration: underline rgb(244, 97, 117);
+}
+
+.footer {
+  margin: 80px 0 10px;
+  text-align: center;
+}
+
+.footer a {
+  color: rgb(141, 139, 139);
+  text-decoration: none;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.footer a:hover i {
+  color: rgb(244, 97, 117);
+}
+
+.footer hr {
+  background-color: rgb(141, 139, 139);
+  width: 100%;
+  height: 1px;
+  border: 0;
+  margin: 20px 0;
+}
+
+.footer p {
+  padding-bottom: 15px;
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  background-color: white;
+  width: 25px;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: -12px;
+  border-radius: 2px;
+}
+
+.nav-links li:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: rgb(221, 27, 53);
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+
+nav .fa-bars-staggered {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .logo {
+    position: fixed;
+    top: 4%;
+    left: 7%;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    padding: 100px 7% 0;
+    background-color: black;
+    text-align: right;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  nav .nav-links {
+    margin: 10px 0;
+    display: block;
+  }
+
+  .register-btn {
+    margin: 15px 0 30px;
+    display: inline-block;
+  }
+
+  nav .fa-bars-staggered {
+    display: block;
+    position: fixed;
+    top: 4%;
+    right: 7%;
+    color: white;
+    font-size: 28px;
+  }
+
+  .active::after {
+    left: -40px;
+    transform: translate(0, 50%);
+    bottom: 50%;
+  }
+
+  .hidemenu {
+    max-height: 320px;
+  }
+}
+@media (max-width: 840px) {
+  .header h1 {
+    padding-top: 200px;
+    font-size: 7vw;
+  }
+
+  .search-bar {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px 10px 30px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .search-bar form {
+    display: block;
+  }
+
+  .search-bar form input {
+    border-bottom: 1px solid rgb(197, 197, 197);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+
+  .search-bar form button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .sub-title {
+    font-size: 6vw;
+  }
+
+  .cta {
+    padding: 15% 5%;
+  }
+
+  .cta h3 {
+    font-size: 7vw;
+    line-height: 8vw;
+  }
+
+  .cta p {
+    font-size: 14px;
+  }
+
+  .cta-btn {
+    padding: 6px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .about-msg {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 645px) {
+  .nav-links {
+    padding-right: 40px;
+  }
+  .nav-links li {
+    width: 100%;
+    display: block;
+  }
+
+  .register-btn {
+    float: right;
+  }
+}
+
+@media (max-width: 500px) {
+  #trending .stories-slider {
+    height: 45rem;
+  }
+
+  .stories-slide {
+    width: 37rem;
+    height: 42rem;
+    position: relative;
+  }
+}
